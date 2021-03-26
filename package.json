@@ -7,7 +7,7 @@
   "author": "lunnlew",
   "license": "MIT",
   "scripts": {
-    "unicom": "node index.js unicom --config unicom.json"
+    "unicom": "node --inspect index.js unicom --config unicom.json"
   },
   "dependencies": {
     "axios": ">=0.21.1",
