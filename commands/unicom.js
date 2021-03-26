@@ -49,7 +49,7 @@ exports.handler = async function (argv) {
       }).catch(err => console.info("unicom任务:", err))
       let hasTasks = await scheduler.hasWillTask(command, {
         tryrun: 'tryrun' in argv,
-        taskKey: account.user,
+        taskKey: String(account.user),
         tasks: account.tasks
       })
       if (hasTasks) {

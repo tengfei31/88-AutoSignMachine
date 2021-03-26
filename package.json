@@ -6,6 +6,9 @@
   "repository": "https://github.com/lunnlew/AutoSignMachine.git",
   "author": "lunnlew",
   "license": "MIT",
+  "scripts": {
+    "unicom": "node index.js unicom --config unicom.json"
+  },
   "dependencies": {
     "axios": ">=0.21.1",
     "axios-cookiejar-support": "^1.0.1",
