@@ -41,6 +41,7 @@ exports.handler = async function (argv) {
   let concurrency = 1
   let queue = new PQueue({ concurrency });
   for (let account of accounts) {
+    account.user = String(account.user)
     queue.add(async () => {
       let { scheduler } = require('../utils/scheduler')
       await require(path.join(__dirname, 'tasks', command, command)).start({
